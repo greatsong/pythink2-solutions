@@ -1,0 +1,1379 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="pythink2 로드맵 문제 해설 — 교사 전용">
+      
+      
+        <meta name="author" content="석리송">
+      
+      
+      
+        <link rel="prev" href="../world1-print/">
+      
+      
+        <link rel="next" href="../world3-input/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>📦 변수 마을 - 생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="../assets/password-gate.js"></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#world-2" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" class="md-header__button md-logo" aria-label="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 18v4h-4v-3h-3v-3h-3l-2.26-2.26c-.55.17-1.13.26-1.74.26a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6c0 .61-.09 1.19-.26 1.74zM7 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📦 변수 마을
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  🔐 시작하기
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world1-print/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📢 출력의 세계
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📦 변수 마을
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world3-input/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ⌨️ 입력 항구
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world4-operator/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🧮 연산 공장
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world5a-condition/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🚦 조건문 갈림길
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world5b-string/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🌲 문자열 숲
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world6-loop/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🔄 반복문 놀이터
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world7-boss/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  👑 보스 도전!
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" class="md-nav__button md-logo" aria-label="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 18v4h-4v-3h-3v-3h-3l-2.26-2.26c-.55.17-1.13.26-1.74.26a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6c0 .61-.09 1.19-.26 1.74zM7 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg>
+
+    </a>
+    생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔐 시작하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world1-print/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📢 출력의 세계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📦 변수 마을
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📦 변수 마을
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#r04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 보물 상자에 담기 (r04)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 보물 상자에 담기 (r04)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-f-string-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        풀이 1: f-string 활용 (pattern)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        접근법 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 학생들이 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 교사 코칭 포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 마법의 컵 바꾸기 (r05)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 마법의 컵 바꾸기 (r05)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        풀이 1: 파이썬 튜플 스왑 (pattern)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-brute_force" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        풀이 2: 임시 변수 활용 (brute_force)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        접근법 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 학생들이 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 교사 코칭 포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 용돈 계산기 (r06)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 용돈 계산기 (r06)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        풀이 1: 수학 공식 직접 적용 (math)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-decomposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        풀이 2: 단계별 분해 (decomposition)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        접근법 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 학생들이 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 교사 코칭 포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world3-input/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⌨️ 입력 항구
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world4-operator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧮 연산 공장
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world5a-condition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚦 조건문 갈림길
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world5b-string/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌲 문자열 숲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world6-loop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔄 반복문 놀이터
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world7-boss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👑 보스 도전!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="world-2">📦 World 2 — 변수 마을 해설<a class="headerlink" href="#world-2" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>변수에 값을 저장하고, 꺼내 쓰고, 바꾸는 법을 배웁니다.
+"값에 이름을 붙인다"는 프로그래밍의 핵심 개념을 경험하는 월드입니다.</p>
+</blockquote>
+<hr />
+<h2 id="r04">🧩 보물 상자에 담기 (r04)<a class="headerlink" href="#r04" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>setup_code로 제공된 <code>fruit</code>, <code>count</code> 변수를 활용하여 f-string으로 출력하세요.</p>
+<p><strong>난이도</strong>: ⭐ | <strong>진단 초점</strong>: L1 | <strong>전략</strong>: pattern</p>
+</blockquote>
+<h3 id="1-f-string-pattern">풀이 1: f-string 활용 (pattern)<a class="headerlink" href="#1-f-string-pattern" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">코드</label><label for="__tabbed_1_2">핵심 아이디어</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># setup_code에서 fruit, count 변수가 제공됩니다</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;과일: </span><span class="si">{</span><span class="n">fruit</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;개수: </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2">개&quot;</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">fruit</span><span class="si">}</span><span class="s2">이(가) </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2">개 있습니다.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>r03에서 배운 f-string을 다른 변수로 연습합니다.</li>
+<li>문자열 변수(<code>fruit</code>)와 숫자 변수(<code>count</code>)를 동시에 사용합니다.</li>
+<li>f-string은 변수 타입에 관계없이 자동으로 문자열로 변환합니다.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="_1">접근법 비교<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>전략</th>
+<th>코드 길이</th>
+<th>가독성</th>
+<th>확장성</th>
+<th>추천 대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pattern (f-string)</td>
+<td>3줄</td>
+<td>★★★★★</td>
+<td>★★★★★</td>
+<td>모든 학생</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_2">⚠️ 학생들이 자주 하는 실수<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">실수: 변수명 오타 (아키타입: syntax-stuck)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;과일: </span><span class="si">{</span><span class="n">Fruit</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;과일: </span><span class="si">{</span><span class="n">fruit</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>원인</strong>: 파이썬은 대소문자를 구분합니다. <code>Fruit</code>과 <code>fruit</code>은 다른 변수입니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: 하드코딩 (아키타입: strategy-biased)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;과일: 사과&quot;</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;개수: 5개&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;과일: </span><span class="si">{</span><span class="n">fruit</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;개수: </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2">개&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>원인</strong>: setup_code 변수를 활용하지 않고, 이전 문제(r02)처럼 직접 값을 넣는 방식을 고수합니다.</p>
+</div>
+<h3 id="_3">🎯 교사 코칭 포인트<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">사고 수준 판단</p>
+<ul>
+<li><strong>L0 (실행)</strong>: 코드 실행 결과를 확인할 수 있는가?</li>
+<li><strong>L1 (이해)</strong>: <code>fruit</code>과 <code>count</code>가 각각 어떤 값을 담고 있는지 설명할 수 있는가?</li>
+<li><strong>L2 (적용)</strong>: 새로운 변수를 추가하여 출력을 확장할 수 있는가?</li>
+<li><strong>L3 (전략)</strong>: 이 단계에서는 해당하지 않음</li>
+</ul>
+</div>
+<hr />
+<h2 id="r05">🧩 마법의 컵 바꾸기 (r05)<a class="headerlink" href="#r05" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>두 변수 <code>a</code>와 <code>b</code>의 값을 서로 바꿔서 출력하세요.</p>
+<p><strong>난이도</strong>: ⭐⭐ | <strong>진단 초점</strong>: L2, L3 | <strong>전략</strong>: pattern, brute_force</p>
+</blockquote>
+<h3 id="1-pattern">풀이 1: 파이썬 튜플 스왑 (pattern)<a class="headerlink" href="#1-pattern" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">코드</label><label for="__tabbed_2_2">핵심 아이디어</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># setup_code에서 a, b 변수가 제공됩니다</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a = </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;b = </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>파이썬만의 독특한 문법: <code>a, b = b, a</code>로 한 줄에 두 변수를 교환합니다.</li>
+<li>내부적으로 튜플 패킹/언패킹이 일어납니다.</li>
+<li>임시 변수가 필요 없어 간결합니다.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="2-brute_force">풀이 2: 임시 변수 활용 (brute_force)<a class="headerlink" href="#2-brute_force" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">코드</label><label for="__tabbed_3_2">비교</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># setup_code에서 a, b 변수가 제공됩니다</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">temp</span> <span class="o">=</span> <span class="n">a</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">b</span> <span class="o">=</span> <span class="n">temp</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a = </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;b = </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>대부분의 프로그래밍 언어에서 사용하는 전통적인 스왑 방법입니다.</li>
+<li>임시 변수(<code>temp</code>)에 원래 값을 백업한 뒤 교환합니다.</li>
+<li>코드가 길지만, "왜 임시 변수가 필요한지" 사고 과정이 명확합니다.</li>
+<li>알고리즘적 사고의 기초가 되는 패턴입니다.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="_4">접근법 비교<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>전략</th>
+<th>코드 길이</th>
+<th>가독성</th>
+<th>확장성</th>
+<th>추천 대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pattern (튜플 스왑)</td>
+<td>3줄</td>
+<td>★★★★★</td>
+<td>★★★</td>
+<td>파이썬 관용구에 익숙한 학생</td>
+</tr>
+<tr>
+<td>brute_force (임시 변수)</td>
+<td>5줄</td>
+<td>★★★★</td>
+<td>★★★★★</td>
+<td>논리적 사고를 연습하는 학생</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">⚠️ 학생들이 자주 하는 실수<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">실수: 콜론 오용 (아키타입: syntax-stuck)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a = </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a = </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>원인</strong>: 콜론(<code>:</code>)을 if문이나 for문처럼 모든 줄 끝에 붙여야 한다고 오해합니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: 할당 순서 오류 (아키타입: eager-beginner)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a = </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;b = </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">temp</span> <span class="o">=</span> <span class="n">a</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">b</span> <span class="o">=</span> <span class="n">temp</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a = </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;b = </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>원인</strong>: <code>a = b</code>를 실행하면 <code>a</code>의 원래 값이 사라집니다. 그 후 <code>b = a</code>를 하면 두 변수 모두 같은 값이 됩니다. 이것이 임시 변수가 필요한 이유입니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: 출력 포맷 오류 (아키타입: validation-weak)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a = </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;b = </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>원인</strong>: 교환은 성공했지만, 요구하는 출력 형식을 맞추지 않았습니다.</p>
+</div>
+<h3 id="_6">🎯 교사 코칭 포인트<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">사고 수준 판단</p>
+<ul>
+<li><strong>L0 (실행)</strong>: 코드를 실행하여 값이 바뀐 것을 확인할 수 있는가?</li>
+<li><strong>L1 (이해)</strong>: 왜 <code>a = b; b = a</code>가 작동하지 않는지 설명할 수 있는가?</li>
+<li><strong>L2 (적용)</strong>: 임시 변수 방식으로 3개 변수를 순환 교환할 수 있는가?</li>
+<li><strong>L3 (전략)</strong>: 튜플 스왑과 임시 변수 방식의 차이를 비교하고, 각각의 장점을 설명할 수 있는가?</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">토론 유도 질문</p>
+<p>"만약 파이썬이 아닌 다른 언어를 쓴다면, <code>a, b = b, a</code>를 쓸 수 있을까요?"
+이 질문으로 언어별 특성과 알고리즘의 보편성에 대한 토론을 유도할 수 있습니다.</p>
+</div>
+<hr />
+<h2 id="r06">🧩 용돈 계산기 (r06)<a class="headerlink" href="#r06" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>setup_code로 제공된 <code>money</code>(용돈)와 <code>rate</code>(저축률%)를 활용하여 저축액과 남은 용돈을 계산하세요.</p>
+<p><strong>난이도</strong>: ⭐ | <strong>진단 초점</strong>: L1, L2 | <strong>전략</strong>: math, decomposition</p>
+</blockquote>
+<h3 id="1-math">풀이 1: 수학 공식 직접 적용 (math)<a class="headerlink" href="#1-math" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">코드</label><label for="__tabbed_4_2">핵심 아이디어</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># setup_code에서 money, rate 변수가 제공됩니다</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">savings</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">money</span> <span class="o">*</span> <span class="n">rate</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">remaining</span> <span class="o">=</span> <span class="n">money</span> <span class="o">-</span> <span class="n">savings</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;용돈: </span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">원&quot;</span><span class="p">)</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;저축률: </span><span class="si">{</span><span class="n">rate</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;저축액: </span><span class="si">{</span><span class="n">savings</span><span class="si">}</span><span class="s2">원&quot;</span><span class="p">)</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;남은 용돈: </span><span class="si">{</span><span class="n">remaining</span><span class="si">}</span><span class="s2">원&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>백분율 계산: <code>money * rate / 100</code></li>
+<li><code>int()</code>로 소수점을 버려 정수 원 단위로 만듭니다.</li>
+<li>남은 돈 = 전체 - 저축액 으로 간단하게 계산합니다.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="2-decomposition">풀이 2: 단계별 분해 (decomposition)<a class="headerlink" href="#2-decomposition" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">코드</label><label for="__tabbed_5_2">비교</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># setup_code에서 money, rate 변수가 제공됩니다</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="c1"># 1단계: 비율을 소수로 변환</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">ratio</span> <span class="o">=</span> <span class="n">rate</span> <span class="o">/</span> <span class="mi">100</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="c1"># 2단계: 저축액 계산 (정수로 변환)</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="n">savings</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">money</span> <span class="o">*</span> <span class="n">ratio</span><span class="p">)</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="c1"># 3단계: 남은 금액 계산</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="n">remaining</span> <span class="o">=</span> <span class="n">money</span> <span class="o">-</span> <span class="n">savings</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="c1"># 4단계: 결과 출력</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;용돈: </span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">원&quot;</span><span class="p">)</span>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;저축률: </span><span class="si">{</span><span class="n">rate</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;저축액: </span><span class="si">{</span><span class="n">savings</span><span class="si">}</span><span class="s2">원&quot;</span><span class="p">)</span>
+</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;남은 용돈: </span><span class="si">{</span><span class="n">remaining</span><span class="si">}</span><span class="s2">원&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>계산 과정을 단계별로 분리하여 각 단계의 의미를 명확히 합니다.</li>
+<li><code>ratio</code> 변수를 추가하여 "비율 변환"과 "곱셈"을 분리합니다.</li>
+<li>코드는 길어지지만, 디버깅과 이해가 쉽습니다.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="_7">접근법 비교<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>전략</th>
+<th>코드 길이</th>
+<th>가독성</th>
+<th>확장성</th>
+<th>추천 대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>math (직접 공식)</td>
+<td>6줄</td>
+<td>★★★★</td>
+<td>★★★</td>
+<td>수학에 자신 있는 학생</td>
+</tr>
+<tr>
+<td>decomposition (단계 분해)</td>
+<td>10줄</td>
+<td>★★★★★</td>
+<td>★★★★★</td>
+<td>논리적 분해를 연습하는 학생</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">⚠️ 학생들이 자주 하는 실수<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">실수: int() 미사용으로 소수점 출력 (아키타입: validation-weak)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">savings</span> <span class="o">=</span> <span class="n">money</span> <span class="o">*</span> <span class="n">rate</span> <span class="o">/</span> <span class="mi">100</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;저축액: </span><span class="si">{</span><span class="n">savings</span><span class="si">}</span><span class="s2">원&quot;</span><span class="p">)</span>  <span class="c1"># 출력: 저축액: 15000.0원</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">savings</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">money</span> <span class="o">*</span> <span class="n">rate</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;저축액: </span><span class="si">{</span><span class="n">savings</span><span class="si">}</span><span class="s2">원&quot;</span><span class="p">)</span>  <span class="c1"># 출력: 저축액: 15000원</span>
+</span></code></pre></div>
+<strong>원인</strong>: 나눗셈(<code>/</code>)의 결과는 항상 float입니다. 원 단위는 정수여야 자연스러우므로 <code>int()</code>로 변환해야 합니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: 계산 순서 오류 (아키타입: eager-beginner)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">savings</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">money</span> <span class="o">/</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">rate</span><span class="p">)</span>  <span class="c1"># 순서는 같지만...</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">remaining</span> <span class="o">=</span> <span class="n">money</span> <span class="o">-</span> <span class="n">rate</span>  <span class="c1"># rate를 빼버림!</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">savings</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">money</span> <span class="o">*</span> <span class="n">rate</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">remaining</span> <span class="o">=</span> <span class="n">money</span> <span class="o">-</span> <span class="n">savings</span>
+</span></code></pre></div>
+<strong>원인</strong>: <code>remaining</code>에서 저축액(<code>savings</code>) 대신 저축률(<code>rate</code>)을 빼는 실수. 변수의 의미를 정확히 파악하지 못한 경우입니다.</p>
+</div>
+<h3 id="_9">🎯 교사 코칭 포인트<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">사고 수준 판단</p>
+<ul>
+<li><strong>L0 (실행)</strong>: 코드 실행 결과를 확인하고, 계산이 맞는지 손으로 검산할 수 있는가?</li>
+<li><strong>L1 (이해)</strong>: <code>int()</code>와 <code>/</code>의 관계, 백분율 계산의 원리를 설명할 수 있는가?</li>
+<li><strong>L2 (적용)</strong>: 세금 계산, 할인가 계산 등 유사한 문제에 같은 패턴을 적용할 수 있는가?</li>
+<li><strong>L3 (전략)</strong>: 한 줄 계산과 단계별 분해의 장단점을 비교할 수 있는가?</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">수학 연결 포인트</p>
+<p>이 문제는 중학교 수학의 '비율과 백분율' 단원과 직접 연결됩니다. "수학 시간에 배운 백분율을 코드로 표현하면 이렇게 돼요"라는 연결고리를 만들어주세요.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+          
+          <a href="../world1-print/" class="md-footer__link md-footer__link--prev" aria-label="이전: 📢 출력의 세계">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                📢 출력의 세계
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../world3-input/" class="md-footer__link md-footer__link--next" aria-label="다음: ⌨️ 입력 항구">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                ⌨️ 입력 항구
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.annotate", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.footer", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../assets/password-gate.js"></script>
+      
+    
+  </body>
+</html>

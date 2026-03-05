@@ -1,0 +1,1308 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="pythink2 로드맵 문제 해설 — 교사 전용">
+      
+      
+        <meta name="author" content="석리송">
+      
+      
+      
+        <link rel="prev" href="../world2-variable/">
+      
+      
+        <link rel="next" href="../world4-operator/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>⌨️ 입력 항구 - 생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="../assets/password-gate.js"></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#world-3" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" class="md-header__button md-logo" aria-label="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 18v4h-4v-3h-3v-3h-3l-2.26-2.26c-.55.17-1.13.26-1.74.26a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6c0 .61-.09 1.19-.26 1.74zM7 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ⌨️ 입력 항구
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  🔐 시작하기
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world1-print/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📢 출력의 세계
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world2-variable/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📦 변수 마을
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ⌨️ 입력 항구
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world4-operator/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🧮 연산 공장
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world5a-condition/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🚦 조건문 갈림길
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world5b-string/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🌲 문자열 숲
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world6-loop/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🔄 반복문 놀이터
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world7-boss/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  👑 보스 도전!
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" class="md-nav__button md-logo" aria-label="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 18v4h-4v-3h-3v-3h-3l-2.26-2.26c-.55.17-1.13.26-1.74.26a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6c0 .61-.09 1.19-.26 1.74zM7 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg>
+
+    </a>
+    생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔐 시작하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world1-print/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📢 출력의 세계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world2-variable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📦 변수 마을
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⌨️ 입력 항구
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⌨️ 입력 항구
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#r07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 인사하는 프로그램 (r07)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 인사하는 프로그램 (r07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-input-f-string-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        풀이 1: input + f-string (pattern)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        접근법 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 학생들이 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 교사 코칭 포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 태어난 해 맞추기 (r08)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 태어난 해 맞추기 (r08)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-int-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        풀이 1: int 변환 + 뺄셈 (math)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        접근법 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 학생들이 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 교사 코칭 포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 피자 주문서 (r09)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 피자 주문서 (r09)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-decomposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        풀이 1: 단계별 입력과 계산 (decomposition)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        접근법 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 학생들이 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 교사 코칭 포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world4-operator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧮 연산 공장
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world5a-condition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚦 조건문 갈림길
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world5b-string/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌲 문자열 숲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world6-loop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔄 반복문 놀이터
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world7-boss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👑 보스 도전!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="world-3">⚓ World 3 — 입력 항구 해설<a class="headerlink" href="#world-3" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>사용자로부터 값을 입력받아 처리하는 법을 배웁니다.
+"프로그램이 외부와 소통한다"는 개념, 그리고 <code>input()</code>의 반환 타입(str)을 이해하는 것이 핵심입니다.</p>
+</blockquote>
+<hr />
+<h2 id="r07">🧩 인사하는 프로그램 (r07)<a class="headerlink" href="#r07" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><code>input()</code>으로 이름을 입력받고, f-string으로 인사말을 출력하세요.</p>
+<p><strong>난이도</strong>: ⭐ | <strong>진단 초점</strong>: L1 | <strong>전략</strong>: pattern</p>
+</blockquote>
+<h3 id="1-input-f-string-pattern">풀이 1: input + f-string (pattern)<a class="headerlink" href="#1-input-f-string-pattern" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">코드</label><label for="__tabbed_1_2">핵심 아이디어</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;이름을 입력하세요: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;안녕하세요, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">님! 반갑습니다.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><code>input()</code> 함수는 사용자 입력을 <strong>문자열(str)</strong>로 반환합니다.</li>
+<li>입력받은 값을 변수에 저장하고, f-string으로 출력에 활용합니다.</li>
+<li><code>input()</code> 안의 문자열은 프롬프트(안내 메시지)입니다.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="_1">접근법 비교<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>전략</th>
+<th>코드 길이</th>
+<th>가독성</th>
+<th>확장성</th>
+<th>추천 대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pattern (input + f-string)</td>
+<td>2줄</td>
+<td>★★★★★</td>
+<td>★★★★</td>
+<td>모든 학생</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_2">⚠️ 학생들이 자주 하는 실수<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">실수: input() 결과를 변수에 저장하지 않음 (아키타입: eager-beginner)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;이름을 입력하세요: &quot;</span><span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;안녕하세요, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">님!&quot;</span><span class="p">)</span>  <span class="c1"># NameError!</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;이름을 입력하세요: &quot;</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;안녕하세요, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">님!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>원인</strong>: <code>input()</code>의 반환값을 변수에 저장하지 않으면, 입력받은 값을 사용할 수 없습니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: 프롬프트 없는 input (아키타입: validation-weak)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;이름을 입력하세요: &quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>원인</strong>: 프로그램이 멈춘 것처럼 보여 사용자가 당황합니다. 기능상 문제는 없지만, 사용자 경험(UX) 관점에서 안내 메시지가 필요합니다.</p>
+</div>
+<h3 id="_3">🎯 교사 코칭 포인트<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">사고 수준 판단</p>
+<ul>
+<li><strong>L0 (실행)</strong>: 프로그램을 실행하고, 입력창에 이름을 입력할 수 있는가?</li>
+<li><strong>L1 (이해)</strong>: <code>input()</code>이 값을 "받아온다"는 개념을 이해하는가?</li>
+<li><strong>L2 (적용)</strong>: 이름 외에 다른 정보(학교, 취미 등)도 입력받도록 확장할 수 있는가?</li>
+<li><strong>L3 (전략)</strong>: 이 단계에서는 해당하지 않음</li>
+</ul>
+</div>
+<hr />
+<h2 id="r08">🧩 태어난 해 맞추기 (r08)<a class="headerlink" href="#r08" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>나이를 입력받아 태어난 해(2026 - 나이)를 계산하여 출력하세요.</p>
+<p><strong>난이도</strong>: ⭐ | <strong>진단 초점</strong>: L1, L2 | <strong>전략</strong>: math</p>
+</blockquote>
+<h3 id="1-int-math">풀이 1: int 변환 + 뺄셈 (math)<a class="headerlink" href="#1-int-math" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">코드</label><label for="__tabbed_2_2">핵심 아이디어</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;나이를 입력하세요: &quot;</span><span class="p">))</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">birth_year</span> <span class="o">=</span> <span class="mi">2026</span> <span class="o">-</span> <span class="n">age</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;태어난 해: </span><span class="si">{</span><span class="n">birth_year</span><span class="si">}</span><span class="s2">년&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><code>input()</code>은 항상 <strong>문자열</strong>을 반환합니다.</li>
+<li>숫자 계산을 하려면 <code>int()</code>로 정수 변환이 필요합니다.</li>
+<li><code>int(input(...))</code>은 "입력받아서 바로 정수로 변환"하는 관용구입니다.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="_4">접근법 비교<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>전략</th>
+<th>코드 길이</th>
+<th>가독성</th>
+<th>확장성</th>
+<th>추천 대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>math (int 변환 + 계산)</td>
+<td>3줄</td>
+<td>★★★★★</td>
+<td>★★★★</td>
+<td>모든 학생</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">⚠️ 학생들이 자주 하는 실수<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">실수: 괄호 안 닫힘 (아키타입: syntax-stuck)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;나이를 입력하세요: &quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;나이를 입력하세요: &quot;</span><span class="p">))</span>
+</span></code></pre></div>
+<strong>원인</strong>: <code>int()</code>와 <code>input()</code> 괄호가 중첩되어 닫는 괄호를 하나 빠뜨립니다. <code>int(input(...))</code> 패턴에서 닫는 괄호는 <strong>두 개</strong>여야 합니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: str에 뺄셈 시도 (아키타입: eager-beginner)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;나이를 입력하세요: &quot;</span><span class="p">)</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">birth_year</span> <span class="o">=</span> <span class="mi">2026</span> <span class="o">-</span> <span class="n">age</span>  <span class="c1"># TypeError!</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;나이를 입력하세요: &quot;</span><span class="p">))</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">birth_year</span> <span class="o">=</span> <span class="mi">2026</span> <span class="o">-</span> <span class="n">age</span>
+</span></code></pre></div>
+<strong>원인</strong>: <code>input()</code>의 반환값은 문자열입니다. 문자열에 뺄셈을 하면 <code>TypeError: unsupported operand type(s) for -: 'int' and 'str'</code> 오류가 발생합니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: 뺄셈 방향 반대 (아키타입: struggling-failure)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;나이를 입력하세요: &quot;</span><span class="p">))</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">birth_year</span> <span class="o">=</span> <span class="n">age</span> <span class="o">-</span> <span class="mi">2026</span>  <span class="c1"># 음수가 나옴!</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;나이를 입력하세요: &quot;</span><span class="p">))</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">birth_year</span> <span class="o">=</span> <span class="mi">2026</span> <span class="o">-</span> <span class="n">age</span>
+</span></code></pre></div>
+<strong>원인</strong>: "올해 연도에서 나이를 빼야" 태어난 해가 나옵니다. 반대로 빼면 음수가 됩니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: 연도 오류 (아024 또는 2025 사용) (아키타입: validation-weak)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">birth_year</span> <span class="o">=</span> <span class="mi">2025</span> <span class="o">-</span> <span class="n">age</span>  <span class="c1"># 작년 연도!</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">birth_year</span> <span class="o">=</span> <span class="mi">2026</span> <span class="o">-</span> <span class="n">age</span>
+</span></code></pre></div>
+<strong>원인</strong>: 현재 연도(2026)를 잘못 입력합니다. 작년 연도를 사용하거나, 연도를 직접 치다 오타가 나는 경우입니다.</p>
+</div>
+<h3 id="_6">🎯 교사 코칭 포인트<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">사고 수준 판단</p>
+<ul>
+<li><strong>L0 (실행)</strong>: 나이를 입력하여 결과를 확인할 수 있는가?</li>
+<li><strong>L1 (이해)</strong>: <code>int()</code>가 왜 필요한지, <code>input()</code>이 문자열을 반환하는 이유를 설명할 수 있는가?</li>
+<li><strong>L2 (적용)</strong>: 생년 대신 졸업 연도, 100세까지 남은 해 등 유사한 계산에 적용할 수 있는가?</li>
+<li><strong>L3 (전략)</strong>: "만 나이"와 "세는 나이"의 차이를 고려한 개선점을 제안할 수 있는가?</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">TypeError 교수 전략</p>
+<p>이 문제는 <code>TypeError</code>를 <strong>의도적으로 경험</strong>시킬 수 있는 좋은 기회입니다.
+먼저 <code>int()</code> 없이 실행해보게 하고, 오류 메시지를 함께 읽으며 "왜 타입 변환이 필요한가"를 체감하도록 유도하세요.</p>
+</div>
+<hr />
+<h2 id="r09">🧩 피자 주문서 (r09)<a class="headerlink" href="#r09" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>피자 이름(str), 수량(int), 가격(int)을 각각 입력받아 주문서를 출력하세요.</p>
+<p><strong>난이도</strong>: ⭐ | <strong>진단 초점</strong>: L1, L2 | <strong>전략</strong>: decomposition</p>
+</blockquote>
+<h3 id="1-decomposition">풀이 1: 단계별 입력과 계산 (decomposition)<a class="headerlink" href="#1-decomposition" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">코드</label><label for="__tabbed_3_2">핵심 아이디어</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># 1단계: 입력</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">pizza</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;피자 이름: &quot;</span><span class="p">)</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;수량: &quot;</span><span class="p">))</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">price</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;가격: &quot;</span><span class="p">))</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="c1"># 2단계: 계산</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="n">total</span> <span class="o">=</span> <span class="n">count</span> <span class="o">*</span> <span class="n">price</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="c1"># 3단계: 출력</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== 주문서 ===&quot;</span><span class="p">)</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;피자: </span><span class="si">{</span><span class="n">pizza</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;수량: </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2">판&quot;</span><span class="p">)</span>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;단가: </span><span class="si">{</span><span class="n">price</span><span class="si">}</span><span class="s2">원&quot;</span><span class="p">)</span>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;합계: </span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s2">원&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>여러 개의 <code>input()</code>을 사용하여 다양한 타입의 데이터를 입력받습니다.</li>
+<li>문자열은 그대로, 숫자는 <code>int()</code>로 변환합니다.</li>
+<li><strong>입력 → 계산 → 출력</strong> 3단계 구조로 문제를 분해합니다.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="_7">접근법 비교<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>전략</th>
+<th>코드 길이</th>
+<th>가독성</th>
+<th>확장성</th>
+<th>추천 대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>decomposition (3단계 분해)</td>
+<td>10줄</td>
+<td>★★★★★</td>
+<td>★★★★★</td>
+<td>모든 학생</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">⚠️ 학생들이 자주 하는 실수<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">실수: 숫자 입력에 int() 누락 (아키타입: eager-beginner)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">count</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;수량: &quot;</span><span class="p">)</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">price</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;가격: &quot;</span><span class="p">)</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="n">total</span> <span class="o">=</span> <span class="n">count</span> <span class="o">*</span> <span class="n">price</span>  <span class="c1"># str * str → TypeError!</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;수량: &quot;</span><span class="p">))</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">price</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;가격: &quot;</span><span class="p">))</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">total</span> <span class="o">=</span> <span class="n">count</span> <span class="o">*</span> <span class="n">price</span>
+</span></code></pre></div>
+<strong>원인</strong>: r08에서 배운 <code>int()</code> 변환을 여러 변수에 일관되게 적용하지 못합니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: 문자열 입력에 int() 적용 (아키타입: syntax-stuck)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">pizza</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;피자 이름: &quot;</span><span class="p">))</span>  <span class="c1"># ValueError!</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">pizza</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;피자 이름: &quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>원인</strong>: r08에서 <code>int(input(...))</code>을 배운 뒤, 모든 <code>input()</code>에 <code>int()</code>를 붙여야 한다고 오해합니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: 곱셈 대신 덧셈 (아키타입: struggling-failure)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">total</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="n">price</span>  <span class="c1"># 수량 + 가격 = 의미 없는 값</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">total</span> <span class="o">=</span> <span class="n">count</span> <span class="o">*</span> <span class="n">price</span>
+</span></code></pre></div>
+<strong>원인</strong>: "합계"라는 단어에서 "더하기"를 연상합니다. 문제의 의미(단가 x 수량)를 정확히 파악하지 못한 경우입니다.</p>
+</div>
+<h3 id="_9">🎯 교사 코칭 포인트<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">사고 수준 판단</p>
+<ul>
+<li><strong>L0 (실행)</strong>: 세 가지 입력을 순서대로 넣고 결과를 확인할 수 있는가?</li>
+<li><strong>L1 (이해)</strong>: 어떤 입력에 <code>int()</code>가 필요하고, 어떤 입력에는 필요 없는지 구분할 수 있는가?</li>
+<li><strong>L2 (적용)</strong>: 배달비, 할인율 등 추가 항목을 넣어 주문서를 확장할 수 있는가?</li>
+<li><strong>L3 (전략)</strong>: 입력-계산-출력 3단계 패턴을 다른 문제에도 적용할 수 있는가?</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">decomposition 사고력 강화</p>
+<p>이 문제는 <strong>분해적 사고(decomposition)</strong>를 처음 경험하는 좋은 기회입니다.
+"이 문제를 세 덩어리로 나눌 수 있을까요?" 라는 질문으로 학생이 스스로 구조를 발견하도록 유도하세요.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+          
+          <a href="../world2-variable/" class="md-footer__link md-footer__link--prev" aria-label="이전: 📦 변수 마을">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                📦 변수 마을
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../world4-operator/" class="md-footer__link md-footer__link--next" aria-label="다음: 🧮 연산 공장">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                🧮 연산 공장
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.annotate", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.footer", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../assets/password-gate.js"></script>
+      
+    
+  </body>
+</html>
