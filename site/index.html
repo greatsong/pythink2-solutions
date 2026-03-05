@@ -1,0 +1,1149 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="pythink2 로드맵 문제 해설 — 교사 전용">
+      
+      
+        <meta name="author" content="석리송">
+      
+      
+      
+      
+        <link rel="next" href="world1-print/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="assets/password-gate.js"></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="." title="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" class="md-header__button md-logo" aria-label="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 18v4h-4v-3h-3v-3h-3l-2.26-2.26c-.55.17-1.13.26-1.74.26a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6c0 .61-.09 1.19-.26 1.74zM7 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🔐 시작하기
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  🔐 시작하기
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="world1-print/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📢 출력의 세계
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="world2-variable/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📦 변수 마을
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="world3-input/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ⌨️ 입력 항구
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="world4-operator/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🧮 연산 공장
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="world5a-condition/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🚦 조건문 갈림길
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="world5b-string/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🌲 문자열 숲
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="world6-loop/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🔄 반복문 놀이터
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="world7-boss/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  👑 보스 도전!
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" class="md-nav__button md-logo" aria-label="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 18v4h-4v-3h-3v-3h-3l-2.26-2.26c-.55.17-1.13.26-1.74.26a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6c0 .61-.09 1.19-.26 1.74zM7 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg>
+
+    </a>
+    생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔐 시작하기
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔐 시작하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        사용 안내
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        목차
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        전략 범례
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        아키타입 범례
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world1-print/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📢 출력의 세계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world2-variable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📦 변수 마을
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world3-input/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⌨️ 입력 항구
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world4-operator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧮 연산 공장
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world5a-condition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚦 조건문 갈림길
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world5b-string/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌲 문자열 숲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world6-loop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔄 반복문 놀이터
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world7-boss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👑 보스 도전!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">🔐 문제해결편<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">교사 전용 자료</p>
+<p>이 자료는 <strong>교사 전용</strong>입니다. 학생에게 공유하지 마세요.</p>
+</div>
+<blockquote>
+<p><strong>생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)</strong></p>
+</blockquote>
+<p>pythink2 로드맵 23개 문제의 풀이와 교수 전략을 담고 있습니다.</p>
+<h2 id="_2">사용 안내<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>각 문제마다 다음 내용을 제공합니다:</p>
+<ul>
+<li><strong>다양한 풀이</strong> — 전략별 모범 답안 (brute_force, pattern, math, decomposition 등)</li>
+<li><strong>접근법 비교</strong> — 언제 어떤 전략이 적합한지, 코드 길이·가독성·확장성 기준 비교표</li>
+<li><strong>학생 오답 패턴</strong> — sim-student 12 아키타입 기반의 실제 오답 사례</li>
+<li><strong>교사 코칭 포인트</strong> — 사고 수준(L0~L3) 판단법과 피드백 방향</li>
+</ul>
+<h2 id="_3">목차<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>월드</th>
+<th>문제 ID</th>
+<th>문제 제목</th>
+<th>난이도</th>
+<th>핵심 전략</th>
+<th>페이지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>World 1 — 출력의 세계</strong></td>
+<td>r01</td>
+<td>안녕, 세상아!</td>
+<td>⭐</td>
+<td>pattern</td>
+<td><a href="world1-print/#-안녕-세상아-r01">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r02</td>
+<td>자기소개 카드</td>
+<td>⭐</td>
+<td>brute_force, pattern</td>
+<td><a href="world1-print/#-자기소개-카드-r02">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r03</td>
+<td>나만의 명함</td>
+<td>⭐</td>
+<td>pattern</td>
+<td><a href="world1-print/#-나만의-명함-r03">바로가기</a></td>
+</tr>
+<tr>
+<td><strong>World 2 — 변수 마을</strong></td>
+<td>r04</td>
+<td>보물 상자에 담기</td>
+<td>⭐</td>
+<td>pattern</td>
+<td><a href="world2-variable/#-보물-상자에-담기-r04">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r05</td>
+<td>마법의 컵 바꾸기</td>
+<td>⭐⭐</td>
+<td>pattern, brute_force</td>
+<td><a href="world2-variable/#-마법의-컵-바꾸기-r05">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r06</td>
+<td>용돈 계산기</td>
+<td>⭐</td>
+<td>math, decomposition</td>
+<td><a href="world2-variable/#-용돈-계산기-r06">바로가기</a></td>
+</tr>
+<tr>
+<td><strong>World 3 — 입력 항구</strong></td>
+<td>r07</td>
+<td>인사하는 프로그램</td>
+<td>⭐</td>
+<td>pattern</td>
+<td><a href="world3-input/#-인사하는-프로그램-r07">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r08</td>
+<td>태어난 해 맞추기</td>
+<td>⭐</td>
+<td>math</td>
+<td><a href="world3-input/#-태어난-해-맞추기-r08">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r09</td>
+<td>피자 주문서</td>
+<td>⭐</td>
+<td>decomposition</td>
+<td><a href="world3-input/#-피자-주문서-r09">바로가기</a></td>
+</tr>
+<tr>
+<td><strong>World 4 — 연산 공장</strong></td>
+<td>r10</td>
+<td>사칙연산 계산기</td>
+<td>⭐</td>
+<td>pattern</td>
+<td><a href="world4-operator/#-사칙연산-계산기-r10">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r11</td>
+<td>시간 변환기</td>
+<td>⭐</td>
+<td>math</td>
+<td><a href="world4-operator/#-시간-변환기-r11">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r12</td>
+<td>BMI 계산기</td>
+<td>⭐⭐</td>
+<td>math, decomposition</td>
+<td><a href="world4-operator/#-bmi-계산기-r12">바로가기</a></td>
+</tr>
+<tr>
+<td><strong>World 5a — 조건문 갈림길</strong></td>
+<td>r13</td>
+<td>성인 확인</td>
+<td>⭐</td>
+<td>pattern</td>
+<td><a href="world5a-condition/#-성인-확인-r13">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r14</td>
+<td>홀짝 판별기</td>
+<td>⭐</td>
+<td>math, pattern</td>
+<td><a href="world5a-condition/#-홀짝-판별기-r14">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r15</td>
+<td>성적표 등급</td>
+<td>⭐⭐</td>
+<td>pattern</td>
+<td><a href="world5a-condition/#-성적표-등급-r15">바로가기</a></td>
+</tr>
+<tr>
+<td><strong>World 5b — 문자열 숲</strong></td>
+<td>r16</td>
+<td>글자 뽑기 기계</td>
+<td>⭐</td>
+<td>pattern</td>
+<td><a href="world5b-string/#-글자-뽑기-기계-r16">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r17</td>
+<td>비밀 메시지 변환기</td>
+<td>⭐</td>
+<td>pattern</td>
+<td><a href="world5b-string/#-비밀-메시지-변환기-r17">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r18</td>
+<td>단어 자르기 도구</td>
+<td>⭐⭐</td>
+<td>pattern</td>
+<td><a href="world5b-string/#-단어-자르기-도구-r18">바로가기</a></td>
+</tr>
+<tr>
+<td><strong>World 6 — 반복문 놀이터</strong></td>
+<td>r19</td>
+<td>구구단 한 단</td>
+<td>⭐</td>
+<td>pattern</td>
+<td><a href="world6-loop/#-구구단-한-단-r19">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r20</td>
+<td>카운트다운 타이머</td>
+<td>⭐</td>
+<td>pattern, brute_force</td>
+<td><a href="world6-loop/#-카운트다운-타이머-r20">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r21</td>
+<td>별 직사각형</td>
+<td>⭐⭐</td>
+<td>pattern, brute_force</td>
+<td><a href="world6-loop/#-별-직사각형-r21">바로가기</a></td>
+</tr>
+<tr>
+<td><strong>Boss World</strong></td>
+<td>r22</td>
+<td>숫자 분류기</td>
+<td>⭐⭐</td>
+<td>decomposition, pattern</td>
+<td><a href="world7-boss/#-숫자-분류기-r22">바로가기</a></td>
+</tr>
+<tr>
+<td></td>
+<td>r23</td>
+<td>점수 분석기</td>
+<td>⭐⭐</td>
+<td>brute_force, decomposition</td>
+<td><a href="world7-boss/#-점수-분석기-r23">바로가기</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">전략 범례<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>전략</th>
+<th>설명</th>
+<th>아이콘</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pattern</code></td>
+<td>파이썬 문법/관용구를 활용한 간결한 풀이</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 15H6l7-14v8h5l-7 14z"/></svg></span></td>
+</tr>
+<tr>
+<td><code>brute_force</code></td>
+<td>하나씩 직접 나열하는 직관적 풀이</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 19.63 13.43 8.2l-.71-.7 1.42-1.43L12 3.89c1.2-1.19 3.09-1.19 4.27 0l3.6 3.61-1.42 1.41h2.84l.71.71-3.55 3.59-.71-.71V9.62l-1.47 1.42-.71-.71L4.13 21.76z"/></svg></span></td>
+</tr>
+<tr>
+<td><code>math</code></td>
+<td>수학적 공식/연산을 활용한 풀이</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v4h10V4zm0 6v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z"/></svg></span></td>
+</tr>
+<tr>
+<td><code>decomposition</code></td>
+<td>문제를 작은 단위로 분해하여 풀이</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7S5 16.2 3.5 16.2H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7s2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">아키타입 범례<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>sim-student 12종 아키타입 중, 오답 패턴에서 자주 등장하는 유형:</p>
+<table>
+<thead>
+<tr>
+<th>아키타입</th>
+<th>설명</th>
+<th>주요 오류 유형</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>syntax-stuck</code></td>
+<td>문법에서 계속 막히는 학생</td>
+<td>콜론, 괄호, 따옴표 누락</td>
+</tr>
+<tr>
+<td><code>strategy-biased</code></td>
+<td>한 가지 접근법만 고집하는 학생</td>
+<td>비효율적 풀이, 확장성 부족</td>
+</tr>
+<tr>
+<td><code>validation-weak</code></td>
+<td>검증 없이 제출하는 학생</td>
+<td>경계값 오류, 부분 정답</td>
+</tr>
+<tr>
+<td><code>ai-dependent</code></td>
+<td>AI 코치에 지나치게 의존하는 학생</td>
+<td>복붙 오류, 맥락 이해 부족</td>
+</tr>
+<tr>
+<td><code>eager-beginner</code></td>
+<td>열정적이지만 기초가 부족한 학생</td>
+<td>개념 혼동, 불완전한 구현</td>
+</tr>
+<tr>
+<td><code>struggling-failure</code></td>
+<td>반복 실패로 자신감이 낮은 학생</td>
+<td>기본 문법 오류 반복</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+        
+          
+          <a href="world1-print/" class="md-footer__link md-footer__link--next" aria-label="다음: 📢 출력의 세계">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                📢 출력의 세계
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy", "content.code.annotate", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.footer", "toc.integrate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="assets/password-gate.js"></script>
+      
+    
+  </body>
+</html>

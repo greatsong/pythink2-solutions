@@ -1,0 +1,1356 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="pythink2 로드맵 문제 해설 — 교사 전용">
+      
+      
+        <meta name="author" content="석리송">
+      
+      
+      
+        <link rel="prev" href="../world3-input/">
+      
+      
+        <link rel="next" href="../world5a-condition/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>🧮 연산 공장 - 생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="../assets/password-gate.js"></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#world-4" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" class="md-header__button md-logo" aria-label="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 18v4h-4v-3h-3v-3h-3l-2.26-2.26c-.55.17-1.13.26-1.74.26a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6c0 .61-.09 1.19-.26 1.74zM7 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🧮 연산 공장
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  🔐 시작하기
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world1-print/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📢 출력의 세계
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world2-variable/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📦 변수 마을
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world3-input/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ⌨️ 입력 항구
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🧮 연산 공장
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world5a-condition/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🚦 조건문 갈림길
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world5b-string/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🌲 문자열 숲
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world6-loop/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🔄 반복문 놀이터
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../world7-boss/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  👑 보스 도전!
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" class="md-nav__button md-logo" aria-label="생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 18v4h-4v-3h-3v-3h-3l-2.26-2.26c-.55.17-1.13.26-1.74.26a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6c0 .61-.09 1.19-.26 1.74zM7 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg>
+
+    </a>
+    생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔐 시작하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world1-print/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📢 출력의 세계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world2-variable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📦 변수 마을
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world3-input/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⌨️ 입력 항구
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧮 연산 공장
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧮 연산 공장
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#r10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 사칙연산 계산기 (r10)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 사칙연산 계산기 (r10)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        풀이 1: 네 가지 연산 출력 (pattern)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        접근법 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 학생들이 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 교사 코칭 포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 시간 변환기 (r11)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 시간 변환기 (r11)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        풀이 1: 몫과 나머지 활용 (math)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        접근법 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 학생들이 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 교사 코칭 포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bmi-r12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 BMI 계산기 (r12)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 BMI 계산기 (r12)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-math_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        풀이 1: 한 번에 계산 (math)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-decomposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        풀이 2: 단계별 분해 (decomposition)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        접근법 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 학생들이 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 교사 코칭 포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world5a-condition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚦 조건문 갈림길
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world5b-string/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌲 문자열 숲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world6-loop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔄 반복문 놀이터
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world7-boss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👑 보스 도전!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="world-4">⚙️ World 4 — 연산 공장 해설<a class="headerlink" href="#world-4" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>사칙연산, 정수 나눗셈(<code>//</code>), 나머지(<code>%</code>) 등 파이썬의 연산자를 본격적으로 활용합니다.
+"계산을 코드로 표현한다"는 경험을 통해 수학과 프로그래밍의 연결고리를 만드는 월드입니다.</p>
+</blockquote>
+<hr />
+<h2 id="r10">🧩 사칙연산 계산기 (r10)<a class="headerlink" href="#r10" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>두 수를 입력받아 덧셈, 뺄셈, 곱셈, 정수 나눗셈 결과를 모두 출력하세요.</p>
+<p><strong>난이도</strong>: ⭐ | <strong>진단 초점</strong>: L1 | <strong>전략</strong>: pattern</p>
+</blockquote>
+<h3 id="1-pattern">풀이 1: 네 가지 연산 출력 (pattern)<a class="headerlink" href="#1-pattern" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">코드</label><label for="__tabbed_1_2">핵심 아이디어</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;첫 번째 수: &quot;</span><span class="p">))</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;두 번째 수: &quot;</span><span class="p">))</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> * </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> // </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>네 가지 연산(<code>+</code>, <code>-</code>, <code>*</code>, <code>//</code>)을 각각 f-string 안에서 바로 계산합니다.</li>
+<li><code>//</code>는 정수 나눗셈(몫)으로, <code>/</code>(실수 나눗셈)와 구분됩니다.</li>
+<li>f-string 중괄호 안에서 직접 연산이 가능합니다.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="_1">접근법 비교<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>전략</th>
+<th>코드 길이</th>
+<th>가독성</th>
+<th>확장성</th>
+<th>추천 대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pattern (f-string 내 직접 연산)</td>
+<td>6줄</td>
+<td>★★★★★</td>
+<td>★★★★</td>
+<td>모든 학생</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_2">⚠️ 학생들이 자주 하는 실수<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">실수: / 대신 // 미사용 (아키타입: eager-beginner)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> / </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># 출력: 10 / 3 = 3.3333...</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> // </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># 출력: 10 // 3 = 3</span>
+</span></code></pre></div>
+<strong>원인</strong>: <code>/</code>와 <code>//</code>의 차이를 모릅니다. <code>/</code>는 실수 나눗셈(float), <code>//</code>는 정수 나눗셈(몫)입니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: int() 변환 누락 (아키타입: syntax-stuck)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;첫 번째 수: &quot;</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;두 번째 수: &quot;</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># 문자열 연결: &quot;3&quot; + &quot;5&quot; = &quot;35&quot;</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;첫 번째 수: &quot;</span><span class="p">))</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;두 번째 수: &quot;</span><span class="p">))</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># 숫자 덧셈: 3 + 5 = 8</span>
+</span></code></pre></div>
+<strong>원인</strong>: 문자열 <code>+</code>는 <strong>연결(concatenation)</strong>입니다. "3" + "5" = "35"가 되어 의도와 다른 결과가 나옵니다.</p>
+</div>
+<h3 id="_3">🎯 교사 코칭 포인트<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">사고 수준 판단</p>
+<ul>
+<li><strong>L0 (실행)</strong>: 두 수를 입력하고 네 가지 결과를 확인할 수 있는가?</li>
+<li><strong>L1 (이해)</strong>: <code>/</code>와 <code>//</code>의 차이, 문자열 <code>+</code>와 숫자 <code>+</code>의 차이를 설명할 수 있는가?</li>
+<li><strong>L2 (적용)</strong>: 나머지(<code>%</code>), 거듭제곱(<code>**</code>) 등을 추가하여 확장할 수 있는가?</li>
+<li><strong>L3 (전략)</strong>: 이 단계에서는 해당하지 않음</li>
+</ul>
+</div>
+<hr />
+<h2 id="r11">🧩 시간 변환기 (r11)<a class="headerlink" href="#r11" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>분(minutes)을 입력받아 시간과 분으로 변환하여 출력하세요. (예: 130분 → 2시간 10분)</p>
+<p><strong>난이도</strong>: ⭐ | <strong>진단 초점</strong>: L1, L2 | <strong>전략</strong>: math</p>
+</blockquote>
+<h3 id="1-math">풀이 1: 몫과 나머지 활용 (math)<a class="headerlink" href="#1-math" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">코드</label><label for="__tabbed_2_2">핵심 아이디어</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">minutes</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;분을 입력하세요: &quot;</span><span class="p">))</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">hours</span> <span class="o">=</span> <span class="n">minutes</span> <span class="o">//</span> <span class="mi">60</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">mins</span> <span class="o">=</span> <span class="n">minutes</span> <span class="o">%</span> <span class="mi">60</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">minutes</span><span class="si">}</span><span class="s2">분은 </span><span class="si">{</span><span class="n">hours</span><span class="si">}</span><span class="s2">시간 </span><span class="si">{</span><span class="n">mins</span><span class="si">}</span><span class="s2">분입니다.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><code>//</code> (정수 나눗셈): 60으로 나눈 <strong>몫</strong> = 시간</li>
+<li><code>%</code> (나머지 연산): 60으로 나눈 <strong>나머지</strong> = 남은 분</li>
+<li><code>//</code>와 <code>%</code>는 "단위 변환"의 핵심 도구입니다.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="_4">접근법 비교<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>전략</th>
+<th>코드 길이</th>
+<th>가독성</th>
+<th>확장성</th>
+<th>추천 대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>math (몫/나머지)</td>
+<td>4줄</td>
+<td>★★★★★</td>
+<td>★★★★★</td>
+<td>모든 학생</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">⚠️ 학생들이 자주 하는 실수<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">실수: f-string 안 중괄호 혼동 (아키타입: syntax-stuck)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">minutes</span><span class="si">}</span><span class="s2">분은 </span><span class="si">{</span><span class="n">hours</span><span class="si">}</span><span class="s2">시간 </span><span class="si">{</span><span class="n">mins</span><span class="si">}</span><span class="s2">분입니다.&quot;</span><span class="p">)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1"># 이 코드 자체는 맞지만, 변수명 오타가 많음</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">minute</span><span class="si">}</span><span class="s2">분은 </span><span class="si">{</span><span class="n">hour</span><span class="si">}</span><span class="s2">시간 </span><span class="si">{</span><span class="nb">min</span><span class="si">}</span><span class="s2">분입니다.&quot;</span><span class="p">)</span>  <span class="c1"># NameError!</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">minutes</span><span class="si">}</span><span class="s2">분은 </span><span class="si">{</span><span class="n">hours</span><span class="si">}</span><span class="s2">시간 </span><span class="si">{</span><span class="n">mins</span><span class="si">}</span><span class="s2">분입니다.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>원인</strong>: 변수명의 단수/복수를 혼동하거나, <code>min</code>(내장 함수)과 <code>mins</code>(사용자 변수)를 혼동합니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: input()에 int() 누락 (아키타입: eager-beginner)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">minutes</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;분을 입력하세요: &quot;</span><span class="p">)</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">hours</span> <span class="o">=</span> <span class="n">minutes</span> <span class="o">//</span> <span class="mi">60</span>  <span class="c1"># TypeError!</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">minutes</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;분을 입력하세요: &quot;</span><span class="p">))</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">hours</span> <span class="o">=</span> <span class="n">minutes</span> <span class="o">//</span> <span class="mi">60</span>
+</span></code></pre></div>
+<strong>원인</strong>: 문자열에 <code>//</code> 연산을 시도합니다. <code>TypeError</code>가 발생합니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: //와 % 반대로 사용 (아키타입: struggling-failure)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">hours</span> <span class="o">=</span> <span class="n">minutes</span> <span class="o">%</span> <span class="mi">60</span>   <span class="c1"># 나머지가 시간에?</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">mins</span> <span class="o">=</span> <span class="n">minutes</span> <span class="o">//</span> <span class="mi">60</span>   <span class="c1"># 몫이 분에?</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">hours</span> <span class="o">=</span> <span class="n">minutes</span> <span class="o">//</span> <span class="mi">60</span>  <span class="c1"># 몫 = 시간</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">mins</span> <span class="o">=</span> <span class="n">minutes</span> <span class="o">%</span> <span class="mi">60</span>    <span class="c1"># 나머지 = 분</span>
+</span></code></pre></div>
+<strong>원인</strong>: <code>//</code>(몫)와 <code>%</code>(나머지)의 의미를 반대로 기억합니다. 130분의 경우 <code>130 % 60 = 10</code>이 시간으로 출력되어 "10시간 2분"이 됩니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: 출력 형식에 공백 누락 (아키타입: validation-weak)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">minutes</span><span class="si">}</span><span class="s2">분은</span><span class="si">{</span><span class="n">hours</span><span class="si">}</span><span class="s2">시간</span><span class="si">{</span><span class="n">mins</span><span class="si">}</span><span class="s2">분입니다.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">minutes</span><span class="si">}</span><span class="s2">분은 </span><span class="si">{</span><span class="n">hours</span><span class="si">}</span><span class="s2">시간 </span><span class="si">{</span><span class="n">mins</span><span class="si">}</span><span class="s2">분입니다.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>원인</strong>: 공백 하나 차이지만, 출력 형식을 정확히 맞추는 습관이 중요합니다.</p>
+</div>
+<h3 id="_6">🎯 교사 코칭 포인트<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">사고 수준 판단</p>
+<ul>
+<li><strong>L0 (실행)</strong>: 130분 입력 시 2시간 10분이 나오는 것을 확인할 수 있는가?</li>
+<li><strong>L1 (이해)</strong>: <code>//</code>와 <code>%</code>의 의미를 일상 언어로 설명할 수 있는가? ("60으로 나눠서 몫은 시간, 나머지는 분")</li>
+<li><strong>L2 (적용)</strong>: 초→분·초 변환, 원→만원 단위 변환 등에 같은 패턴을 적용할 수 있는가?</li>
+<li><strong>L3 (전략)</strong>: <code>divmod()</code> 함수를 활용한 대안을 탐색할 수 있는가?</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">시각적 비유</p>
+<p>"130개의 사탕을 60개씩 봉지에 담으면, 봉지 2개(몫=시간)와 남은 10개(나머지=분)가 돼요"
+이런 비유로 <code>//</code>와 <code>%</code>의 관계를 시각화하면 효과적입니다.</p>
+</div>
+<hr />
+<h2 id="bmi-r12">🧩 BMI 계산기 (r12)<a class="headerlink" href="#bmi-r12" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>키(cm)와 몸무게(kg)를 입력받아 BMI를 계산하세요. (BMI = 몸무게 / 키(m)^2, 소수점 1자리)</p>
+<p><strong>난이도</strong>: ⭐⭐ | <strong>진단 초점</strong>: L1, L2 | <strong>전략</strong>: math, decomposition</p>
+</blockquote>
+<h3 id="1-math_1">풀이 1: 한 번에 계산 (math)<a class="headerlink" href="#1-math_1" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">코드</label><label for="__tabbed_3_2">핵심 아이디어</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">height</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;키(cm): &quot;</span><span class="p">))</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">weight</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;몸무게(kg): &quot;</span><span class="p">))</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">bmi</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;BMI: </span><span class="si">{</span><span class="n">bmi</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>cm를 m로 변환: <code>height / 100</code></li>
+<li>BMI 공식: <code>weight / height_m ** 2</code></li>
+<li><code>round(값, 1)</code>으로 소수점 첫째 자리까지 반올림합니다.</li>
+<li>괄호의 위치가 중요합니다: <code>(height / 100) ** 2</code></li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="2-decomposition">풀이 2: 단계별 분해 (decomposition)<a class="headerlink" href="#2-decomposition" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">코드</label><label for="__tabbed_4_2">비교</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">height</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;키(cm): &quot;</span><span class="p">))</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">weight</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;몸무게(kg): &quot;</span><span class="p">))</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1"># 1단계: cm → m 변환</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="n">height_m</span> <span class="o">=</span> <span class="n">height</span> <span class="o">/</span> <span class="mi">100</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="c1"># 2단계: BMI 계산</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="n">bmi</span> <span class="o">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height_m</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="c1"># 3단계: 반올림</span>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="n">bmi</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">bmi</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="c1"># 4단계: 출력</span>
+</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;BMI: </span><span class="si">{</span><span class="n">bmi</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>각 단계가 독립적으로 확인 가능합니다.</li>
+<li>중간 변수(<code>height_m</code>)로 단위 변환 과정을 명시합니다.</li>
+<li>디버깅이 쉽습니다 (어느 단계에서 문제가 생겼는지 파악 가능).</li>
+<li>계산 순서를 실수할 위험이 줄어듭니다.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="_7">접근법 비교<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>전략</th>
+<th>코드 길이</th>
+<th>가독성</th>
+<th>확장성</th>
+<th>추천 대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>math (한 줄 계산)</td>
+<td>4줄</td>
+<td>★★★</td>
+<td>★★★</td>
+<td>수학 공식에 익숙한 학생</td>
+</tr>
+<tr>
+<td>decomposition (단계별)</td>
+<td>10줄</td>
+<td>★★★★★</td>
+<td>★★★★★</td>
+<td>초보~중급 학생</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">⚠️ 학생들이 자주 하는 실수<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">실수: 괄호 위치 오류 (아키타입: eager-beginner)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">bmi</span> <span class="o">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="n">height</span> <span class="o">/</span> <span class="mi">100</span> <span class="o">**</span> <span class="mi">2</span>  <span class="c1"># 100만 제곱됨!</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">bmi</span> <span class="o">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+</span></code></pre></div>
+<strong>원인</strong>: 연산자 우선순위에 의해 <code>100 ** 2 = 10000</code>이 먼저 계산되고, <code>weight / height / 10000</code>이 됩니다. 의도와 전혀 다른 값이 나옵니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: cm를 m로 변환하지 않음 (아키타입: validation-weak)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">bmi</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">weight</span> <span class="o">/</span> <span class="n">height</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># 키가 cm 단위인 채로!</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">bmi</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>원인</strong>: BMI 공식에서 키는 미터(m) 단위여야 합니다. 170cm를 그대로 넣으면 BMI가 0.00...이 됩니다.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">실수: round() 미사용 (아키타입: validation-weak)</p>
+<p><strong>❌ 잘못된 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">bmi</span> <span class="o">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;BMI: </span><span class="si">{</span><span class="n">bmi</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># 출력: BMI: 24.221453287197235</span>
+</span></code></pre></div>
+<strong>✅ 올바른 코드:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">bmi</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;BMI: </span><span class="si">{</span><span class="n">bmi</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># 출력: BMI: 24.2</span>
+</span></code></pre></div>
+<strong>원인</strong>: 소수점 1자리 요구사항을 놓칩니다. 결과 확인 없이 제출하는 패턴입니다.</p>
+</div>
+<h3 id="_9">🎯 교사 코칭 포인트<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">사고 수준 판단</p>
+<ul>
+<li><strong>L0 (실행)</strong>: 키와 몸무게를 입력하여 BMI 값을 확인할 수 있는가?</li>
+<li><strong>L1 (이해)</strong>: 단위 변환(cm→m)이 왜 필요한지, <code>round()</code> 함수의 역할을 설명할 수 있는가?</li>
+<li><strong>L2 (적용)</strong>: BMI 결과에 따른 판정(저체중/정상/과체중)을 추가할 수 있는가? (→ World 5a 연결)</li>
+<li><strong>L3 (전략)</strong>: 한 줄 계산과 단계별 분해의 장단점을 비교하고, 팀 프로젝트에서 어떤 방식이 적합한지 판단할 수 있는가?</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">수학 교과 연결</p>
+<p>BMI 공식은 물리(단위 변환), 수학(비율, 제곱) 개념이 통합됩니다.
+"키를 미터로 바꾸지 않으면 어떤 일이 일어날까요?" 라는 질문으로 단위의 중요성을 체감하게 하세요.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+          
+          <a href="../world3-input/" class="md-footer__link md-footer__link--prev" aria-label="이전: ⌨️ 입력 항구">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                ⌨️ 입력 항구
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../world5a-condition/" class="md-footer__link md-footer__link--next" aria-label="다음: 🚦 조건문 갈림길">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                🚦 조건문 갈림길
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.annotate", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.footer", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../assets/password-gate.js"></script>
+      
+    
+  </body>
+</html>

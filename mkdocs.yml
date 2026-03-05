@@ -1,0 +1,71 @@
+site_name: "생각하는 힘을 키우는 파이썬 기초 with pythink2 (문제해결편)"
+site_description: "pythink2 로드맵 문제 해설 — 교사 전용"
+site_author: "석리송"
+
+theme:
+  name: material
+  language: ko
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - toc.integrate
+  icon:
+    logo: material/key-variant
+  font:
+    text: Noto Sans KR
+    code: JetBrains Mono
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra_css:
+  - assets/extra.css
+
+extra_javascript:
+  - assets/password-gate.js
+
+nav:
+  - "🔐 시작하기": index.md
+  - "📢 출력의 세계": world1-print.md
+  - "📦 변수 마을": world2-variable.md
+  - "⌨️ 입력 항구": world3-input.md
+  - "🧮 연산 공장": world4-operator.md
+  - "🚦 조건문 갈림길": world5a-condition.md
+  - "🌲 문자열 숲": world5b-string.md
+  - "🔄 반복문 놀이터": world6-loop.md
+  - "👑 보스 도전!": world7-boss.md
